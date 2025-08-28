@@ -382,7 +382,15 @@ input:checked + .slider:before {
     background-color: var(--card-bg-dark);
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     border-color: var(--primary-color-dark);
+    
 }
+.light-mode .project-card .bot{
+   color: var(--primary-color-dark);
+text-decoration: none;
+}
+.dark-mode .project-card .bot{
+    color: var(--primary-color-dark);
+text-decoration: none;}
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
