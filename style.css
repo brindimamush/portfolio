@@ -202,8 +202,10 @@ input:checked + .slider:before {
     color: var(--primary-color-light);
 }
 .dark-mode .btn-secondary {
-    border-color: var(--primary-color-dark);
+    border-color: var(--background-dark);
     color: var(--primary-color-dark);
+    color:#ccc;
+    
 }
 
 .social-links {
