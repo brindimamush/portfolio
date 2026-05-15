@@ -30,24 +30,45 @@
     </div>
 
     <nav>
-        <div class="logo">Birhanu Mamush <a href="https://github.com/brindimamush/" style="color:var(--primary); font-weight:800; margin-right:20px; margin-left: 20px;" target="_blank"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/birhanu-mamush-0b7aa52a4/" style="color:var(--primary); font-weight:800; margin-right:20px;" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
+        <div class="logo">
+            Birhanu Mamush
+            <a href="#about" style="margin-left: 20px; font-size: 0.9rem; font-weight: 400; opacity: 0.7;">About</a>
+            <a href="#projects" style="margin-left: 15px; font-size: 0.9rem; font-weight: 400; opacity: 0.7;">Projects</a>
+            <a href="https://github.com/brindimamush/" style="color:var(--primary); font-weight:800; margin-right:20px; margin-left: 20px;" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/birhanu-mamush-0b7aa52a4/" style="color:var(--primary); font-weight:800; margin-right:20px;" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
         <button class="theme-toggle" id="theme-btn"><i class="fas fa-sun"></i></button>
     </nav>
 
-    <header class="hero">
+    <header class="hero reveal">
         <div class="hero-img-container">
             <img src="profile.jpg" alt="Profile" class="hero-img">
         </div>
         <div class="hero-content">
-            <h1>Python & <br>JavaScript developer</h1>
+            <h1>Building Intelligent Systems & <br>High-Performance Backends</h1>
             <p>I build autonomous systems, <strong>Python</strong> backends, and AI-powered automation for remote-first teams.</p>
             <div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 20px;" class="desktop-left">
                 <span class="tag">AI Integration</span><span class="tag">Bot Dev</span><span class="tag">FastAPI</span>
             </div>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#" class="btn btn-secondary">Download Resume</a>
+            </div>
         </div>
     </header>
 
-    <section class="section-padding">
+    <section id="about" class="section-padding reveal">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <h2 style="margin-bottom: 1.5rem;">About Me</h2>
+            <p style="font-size: 1.2rem; line-height: 1.6; color: var(--text-dim);">
+                I'm a software engineer specializing in Python-driven automation and AI integration.
+                I focus on building scalable backends and intelligent bots that solve real-world problems.
+                With a passion for clean code and efficient systems, I help remote-first teams automate complex workflows.
+            </p>
+        </div>
+    </section>
+
+    <section class="section-padding reveal">
         <div class="bento-grid">
             <div class="bento-item bento-large">
                 <i class="fas fa-bolt"></i>
@@ -67,7 +88,21 @@
         </div>
     </section>
 
-    <section class="section-padding">
+    <section id="skills" class="section-padding reveal">
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <h2>Technical Stack</h2>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+            <div class="tag" style="padding: 1rem 2rem; font-size: 1rem;">Python (FastAPI)</div>
+            <div class="tag" style="padding: 1rem 2rem; font-size: 1rem;">JavaScript</div>
+            <div class="tag" style="padding: 1rem 2rem; font-size: 1rem;">LLM (LangChain, OpenAI)</div>
+            <div class="tag" style="padding: 1rem 2rem; font-size: 1rem;">Bot Development (Telegram API)</div>
+            <div class="tag" style="padding: 1rem 2rem; font-size: 1rem;">SQL & NoSQL Databases</div>
+            <div class="tag" style="padding: 1rem 2rem; font-size: 1rem;">Docker & Deployment</div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-padding reveal">
         <h2 style="margin-bottom: 2rem;">Work Showcase</h2>
          <div class="project-list">
 
@@ -78,7 +113,7 @@
                 </div>
                 <div class="project-info">
                     <h3>Single Tenant Ecommerce Telegram bot web App</h3>
-                    <p>A single tenant ecommerce telegram bot web app to sell and buy things</p>
+                    <p>A robust Single Tenant Ecommerce platform integrated as a Telegram Web App (TWA), providing a native-like shopping experience within Telegram.</p>
                     <div style="margin-top: 1.5rem;">
                         <a href="https://github.com/brindimamush/SingleTenantEcommerce" style="color:var(--primary); font-weight:800; margin-right:20px;">REPO <i class="fab fa-github"></i></a>
                         <a href="https://t.me/singleTenantBreBot/LuxeMarket" style="opacity:0.8;">DEMO <i class="fas fa-link"></i></a>
@@ -94,7 +129,7 @@
                 </div>
                 <div class="project-info">
                     <h3>AI_TOXIC_CHECKER</h3>
-                    <p>Developed a Telegram bot to check group messages for toxicity and removes the message</p>
+                    <p>Real-time AI-powered group moderation bot that automatically detects and removes toxic content using LLM-based analysis.</p>
                     <div style="margin-top: 1.5rem;">
                         <a href="https://github.com/brindimamush/ai-group-moderator-bot" style="color:var(--primary); font-weight:800; margin-right:20px;" target="_blank">REPO <i class="fab fa-github"></i></a>
                         
@@ -107,7 +142,7 @@
                     <iframe width="832" height="451" src="https://www.youtube.com/embed/4ELgMzJBarw" title="ከቴሌብር screenshot የተላከ ደረሰኝ እንዴት ቴሌግራም ላይ ማረጋገጥ እንችላለን | How to check receipt of telebirr on telegram" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
                 <div class="project-info">
                     <h3>AI_receipt_CHECKER</h3>
-                    <p>Developed a Telegram bot to check telebirr receipt validity from screenshoot</p>
+                    <p>Automated verification bot that uses AI to validate Telebirr receipts from screenshots, significantly reducing manual verification time.</p>
                     <div style="margin-top: 1.5rem;">
                         <a href="https://github.com/brindimamush/AI_receipt_checker" style="color:var(--primary); font-weight:800; margin-right:20px;" target="_blank">REPO <i class="fab fa-github"></i></a>
                         
