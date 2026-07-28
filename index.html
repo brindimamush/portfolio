@@ -1,185 +1,840 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birhanu Mamush</title>
-    <!-- The title of your page -->
-    <meta property="og:title" content="Birhanu Mamush Dev" />
-
-<!-- A brief description -->
-    <meta property="og:description" content="a portfolio website showcasing my Work as a remote ready developer" />
-
-<!-- The URL to the image you want as a thumbnail -->
-    <meta property="og:image" content="https://photos.app.goo.gl/6HduJmV3DTXYy1ok7" />
-
-<!-- The URL of your website -->
-    <meta property="og:url" content="https://birhanumamush.pro.et" />
-    <meta name="twitter:card" content="summary_large_image" />
-
+    <title>Birhanu Mamush | AI-Assisted Software Engineer</title>
+    
+    <!-- PRIMARY SEO META TAGS -->
+    <meta name="description" content="Birhanu Mamush - AI-assisted software engineer specializing in building production-ready products cost-effectively. Expert in Telegram Web Apps, LLM integration, and remote development.">
+    <meta name="keywords" content="AI software engineer, Telegram bot developer, LLM integration, remote developer, Python developer, FastAPI, Telegram Web App, AI automation, software engineer Ethiopia, Birhanu Mamush">
+    <meta name="author" content="Birhanu Mamush">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://birhanumamush.com">
+    
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://birhanumamush.com">
+    <meta property="og:title" content="Birhanu Mamush | AI-Assisted Software Engineer">
+    <meta property="og:description" content="Building production-ready software, accelerated by AI. Transforming ideas into cost-effective, scalable products with modern tech stacks.">
+    <meta property="og:image" content="https://drive.google.com/file/d/1QItUpVdooOvW9Y9_aadp2VUyIM6bG7v8/view?usp=drivesdk">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Birhanu Mamush - AI-Assisted Software Engineer Portfolio">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Birhanu Mamush Portfolio">
+    
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://birhanumamush.com">
+    <meta name="twitter:title" content="Birhanu Mamush | AI-Assisted Software Engineer">
+    <meta name="twitter:description" content="Building production-ready software, accelerated by AI. Transforming ideas into cost-effective, scalable products.">
+    <meta name="twitter:image" content="https://drive.google.com/file/d/1QItUpVdooOvW9Y9_aadp2VUyIM6bG7v8/view?usp=drivesdk">
+    <meta name="twitter:image:alt" content="Birhanu Mamush Portfolio Preview">
+    <meta name="twitter:creator" content="@brindimamush">
+    
+    <!-- ADDITIONAL SEO TAGS -->
+    <meta name="theme-color" content="#0284C7">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0284C7">
+    <meta name="msapplication-TileColor" content="#0284C7">
+    
+    <!-- STRUCTURED DATA (JSON-LD) FOR SEARCH ENGINES -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Birhanu Mamush",
+        "url": "https://birhanumamush.pro.et/",
+        "image": "https://drive.google.com/file/d/1126FLqJvemKdvev69mDxj-74f_UEfObI/view?usp=drivesdk",
+        "jobTitle": "AI-Assisted Software Engineer",
+        "description": "AI-assisted software engineer specializing in building production-ready products cost-effectively and remotely.",
+        "email": "brindimamush@gmail.com",
+        "telephone": "+251913637382",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "ET"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/birhanu-mamush-0b7aa52a4/",
+            "https://github.com/brindimamush",
+            "https://t.me/brindimamush"
+        ],
+        "knowsAbout": [
+            "Python",
+            "FastAPI",
+            "Telegram Web Apps",
+            "LLM Integration",
+            "Computer Vision",
+            "Node.js",
+            "AI Automation",
+            "Remote Development"
+        ],
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance"
+        }
+    }
+    </script>
+    
+    <!-- FAVICON -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%230284C7%22 rx=%2220%22/><text x=%2250%22 y=%2268%22 font-family=%22Arial, sans-serif%22 font-size=%2250%22 font-weight=%22bold%22 fill=%22white%22 text-anchor=%22middle%22>BM</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 
+    <style>
+        /* =========================================
+           CSS VARIABLES & THEME CONFIGURATION
+           ========================================= */
+        :root {
+            /* Light Mode (Default) */
+            --bg-primary: #F0F4F8;
+            --bg-secondary: #FFFFFF;
+            --bg-tertiary: #E2E8F0;
+            --text-primary: #102A43;
+            --text-secondary: #334E68;
+            --accent: #0284C7;
+            --accent-hover: #0369A1;
+            --border: #CBD5E1;
+            --shadow: rgba(16, 42, 67, 0.08);
+            --grid-color: rgba(16, 42, 67, 0.05);
+        }
+
+        [data-theme="dark"] {
+            /* Dark Mode */
+            --bg-primary: #0F172A;
+            --bg-secondary: #1E293B;
+            --bg-tertiary: #334155;
+            --text-primary: #F1F5F9;
+            --text-secondary: #94A3B8;
+            --accent: #22D3EE;
+            --accent-hover: #06B6D4;
+            --border: #334155;
+            --shadow: rgba(0, 0, 0, 0.3);
+            --grid-color: rgba(241, 245, 249, 0.03);
+        }
+
+        /* =========================================
+           GLOBAL STYLES
+           ========================================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image: radial-gradient(var(--grid-color) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* =========================================
+           TYPOGRAPHY
+           ========================================= */
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--text-primary);
+        }
+
+        h1 { font-size: clamp(2.5rem, 5vw, 4rem); letter-spacing: -0.02em; }
+        h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); margin-bottom: 1rem; }
+        h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+        
+        .text-accent { color: var(--accent); }
+        .text-secondary { color: var(--text-secondary); }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+
+        /* =========================================
+           COMPONENTS
+           ========================================= */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background-color: var(--accent);
+            color: #FFFFFF;
+            font-weight: 600;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px var(--shadow);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--accent);
+            color: var(--accent);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--accent);
+            color: #FFFFFF;
+        }
+
+        .card {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 6px -1px var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px -4px var(--shadow);
+            border-color: var(--accent);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background-color: var(--bg-tertiary);
+            color: var(--text-secondary);
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+
+        /* =========================================
+           HEADER & NAV
+           ========================================= */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(240, 244, 248, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            padding: 16px 0;
+        }
+
+        [data-theme="dark"] header {
+            background-color: rgba(15, 23, 42, 0.85);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--text-primary);
+        }
+
+        .logo span { color: var(--accent); }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            color: var(--text-secondary);
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .theme-toggle {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+
+        .theme-toggle:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* =========================================
+           HERO SECTION & PROFILE PIC
+           ========================================= */
+        .hero {
+            padding: 160px 0 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+            max-width: 800px;
+        }
+
+        .profile-pic {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 4px solid var(--accent);
+            object-fit: cover;
+            box-shadow: 0 8px 24px var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: var(--bg-tertiary);
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 32px var(--shadow);
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--accent);
+            width: fit-content;
+        }
+
+        .hero-badge .pulse {
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(2, 132, 199, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(2, 132, 199, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(2, 132, 199, 0); }
+        }
+
+        [data-theme="dark"] .hero-badge .pulse {
+             animation-name: pulse-dark;
+        }
+
+        @keyframes pulse-dark {
+            0% { box-shadow: 0 0 0 0 rgba(34, 211, 238, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(34, 211, 238, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(34, 211, 238, 0); }
+        }
+
+        .hero h1 {
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            margin-top: 16px;
+            flex-wrap: wrap;
+        }
+
+        /* =========================================
+           VALUE PROPOSITION (BENTO GRID)
+           ========================================= */
+        .section {
+            padding: 100px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 60px;
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .bento-item {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .bento-item.large {
+            grid-column: span 2;
+        }
+
+        @media (max-width: 768px) {
+            .bento-item.large { grid-column: span 1; }
+        }
+
+        .icon-box {
+            width: 48px;
+            height: 48px;
+            background-color: var(--bg-tertiary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            color: var(--accent);
+        }
+
+        /* =========================================
+           PROJECTS SECTION & VIDEO RESPONSIVENESS
+           ========================================= */
+        .project-media {
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: #000;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .video-wrapper-16-9 {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+        }
+
+        .video-wrapper-9-16 {
+            position: relative;
+            padding-bottom: 177.77%;
+            height: 0;
+            max-width: 320px;
+            margin: 0 auto;
+        }
+
+        .video-wrapper-16-9 iframe,
+        .video-wrapper-9-16 iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .project-info {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .project-info p {
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            flex-grow: 1;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 16px;
+            margin-top: auto;
+        }
+
+        .link-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
+            color: var(--accent);
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            letter-spacing: 0.05em;
+            transition: opacity 0.2s ease;
+        }
+
+        .link-btn:hover {
+            opacity: 0.7;
+        }
+
+        /* =========================================
+           CONTACT SECTION
+           ========================================= */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 20px;
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+
+        .contact-item:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .contact-item i {
+            font-size: 1.5rem;
+            color: var(--accent);
+            width: 24px;
+            text-align: center;
+        }
+
+        .contact-info h4 {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .contact-info span {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        /* =========================================
+           FOOTER
+           ========================================= */
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 40px 0;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        /* =========================================
+           RESPONSIVE
+           ========================================= */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero { 
+                padding-top: 120px; 
+                text-align: center; 
+                align-items: center;
+            }
+            .hero-buttons { justify-content: center; }
+        }
+    </style>
 </head>
 <body>
 
-    <div class="status-bar">
-        <span class="status-dot"></span> Available for Remote Work
-    </div>
-
-    <nav>
-        <div class="logo">
-            Birhanu Mamush
-            <a href="#about" style="margin-left: 20px; font-size: 0.9rem; font-weight: 400; opacity: 0.7;">About</a>
-            <a href="#projects" style="margin-left: 15px; font-size: 0.9rem; font-weight: 400; opacity: 0.7;">Projects</a>
-            <a href="https://github.com/brindimamush/" style="color:var(--primary); font-weight:800; margin-right:20px; margin-left: 20px;" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/birhanu-mamush-0b7aa52a4/" style="color:var(--primary); font-weight:800; margin-right:20px;" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-        <button class="theme-toggle" id="theme-btn"><i class="fas fa-sun"></i></button>
-    </nav>
-
-    <header class="hero reveal">
-        <div class="hero-img-container">
-            <img src="profile.jpg" alt="Profile" class="hero-img">
-        </div>
-        <div class="hero-content">
-            <h1>Building Intelligent Systems & <br>High-Performance Backends</h1>
-            <p>I build autonomous systems, <strong>Python</strong> backends, and AI-powered automation for remote-first teams.</p>
-            <div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 20px;" class="desktop-left">
-                <span class="tag">AI Integration</span><span class="tag">Bot Dev</span><span class="tag">FastAPI</span>
-            </div>
-            <div class="hero-btns">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-            </div>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">BM<span>.</span></a>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#value">Advantage</a>
+                    <a href="#projects">Work</a>
+                    <a href="#contact">Contact</a>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </nav>
         </div>
     </header>
 
-    <section id="about" class="section-padding reveal">
-        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-            <h2 style="margin-bottom: 1.5rem;">About Me</h2>
-            <p style="font-size: 1.2rem; line-height: 1.6; color: var(--text-dim);">
-                I'm a software engineer specializing in Python-driven automation and AI integration.
-                I focus on building scalable backends and intelligent bots that solve real-world problems.
-                With a passion for clean code and efficient systems, I help remote-first teams automate complex workflows.
-            </p>
+    <!-- Hero Section -->
+    <section class="container hero">
+        <img src="https://ui-avatars.com/api/?name=Birhanu+Mamush&background=0284C7&color=fff&size=256&font-size=0.33" 
+             alt="Birhanu Mamush Profile Picture" 
+             class="profile-pic">
+        
+        <div class="hero-badge">
+            <span class="pulse"></span>
+            Available for Remote Opportunities
+        </div>
+        <h1>Building Production-Ready Software, <span class="text-accent">Accelerated by AI</span></h1>
+        <p>I'm Birhanu Mamush, an AI-assisted software engineer. I transform ideas into cost-effective, scalable, and high-quality production products. Leveraging AI to write better code faster, without compromising on architecture or reliability.</p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn">View My Work <i class="fas fa-arrow-right"></i></a>
+            <a href="#contact" class="btn btn-outline">Let's Talk</a>
         </div>
     </section>
 
-    <section class="section-padding reveal">
-        <div class="bento-grid">
-            <div class="bento-item bento-large">
-                <i class="fas fa-bolt"></i>
-                <h3>FastAPI Engineering</h3>
-                <p>Developing asynchronous, high-performance backends with Python.</p>
+    <!-- Value Proposition Section -->
+    <section id="value" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>The AI Development <span class="text-accent">Advantage</span></h2>
+                <p class="text-secondary">I don't just write code; I orchestrate AI tools to deliver enterprise-grade solutions at a fraction of the traditional time and cost.</p>
             </div>
-            <div class="bento-item">
-                <i class="fas fa-robot"></i>
-                <h3>Bot Dev</h3>
-                <p>Bots that run inside Social media.</p>
-            </div>
-            <div class="bento-item">
-                <i class="fas fa-brain"></i>
-                <h3>LLM AI</h3>
-                <p>LangChain & OpenAI Agent integration.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="section-padding reveal">
-        <div style="text-align: center; margin-bottom: 3rem;">
-            <h2>Technical Stack</h2>
-        </div>
-        <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-            <div class="tag" style="padding: 1rem 2rem; font-size: 1rem;">Python (FastAPI)</div>
-            <div class="tag" style="padding: 1rem 2rem; font-size: 1rem;">JavaScript</div>
-            <div class="tag" style="padding: 1rem 2rem; font-size: 1rem;">LLM (LangChain, OpenAI)</div>
-            <div class="tag" style="padding: 1rem 2rem; font-size: 1rem;">Bot Development (Telegram API)</div>
-            <div class="tag" style="padding: 1rem 2rem; font-size: 1rem;">SQL & NoSQL Databases</div>
-            <div class="tag" style="padding: 1rem 2rem; font-size: 1rem;">Docker & Deployment</div>
-        </div>
-    </section>
-
-    <section id="projects" class="section-padding reveal">
-        <h2 style="margin-bottom: 2rem;">Work Showcase</h2>
-         <div class="project-list">
-
-            <div class="project-card">
-                <div class="project-media">
-                    <iframe width="315" height="576" src="https://www.youtube.com/embed/IQ1kg7bpUyc" title="singleTenant Ecommerce Telegram webapp" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    
-                </div>
-                <div class="project-info">
-                    <h3>Single Tenant Ecommerce Telegram bot web App</h3>
-                    <p>A robust Single Tenant Ecommerce platform integrated as a Telegram Web App (TWA), providing a native-like shopping experience within Telegram.</p>
-                    <div style="margin-top: 1.5rem;">
-                        <a href="https://github.com/brindimamush/SingleTenantEcommerce" style="color:var(--primary); font-weight:800; margin-right:20px;">REPO <i class="fab fa-github"></i></a>
-                        <a href="https://t.me/singleTenantBreBot/LuxeMarket" style="opacity:0.8;">DEMO <i class="fas fa-link"></i></a>
-                    </div>
-                </div>
-            </div>
-
-           
             
-            <div class="project-card">
-                <div class="project-media">
-                    <iframe width="829" height="451" src="https://www.youtube.com/embed/sOSsL__4IjE" title="#AI Removing toxic content from telegram group using bot integrating it with AI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="bento-grid">
+                <div class="card bento-item large">
+                    <div class="icon-box"><i class="fas fa-rocket"></i></div>
+                    <h3>Idea to Production, Faster</h3>
+                    <p class="text-secondary">By integrating AI-assisted coding, automated testing, and rapid prototyping, I reduce development cycles significantly. You get a market-ready product without the typical bloated timeline.</p>
                 </div>
-                <div class="project-info">
-                    <h3>AI_TOXIC_CHECKER</h3>
-                    <p>Real-time AI-powered group moderation bot that automatically detects and removes toxic content using LLM-based analysis.</p>
-                    <div style="margin-top: 1.5rem;">
-                        <a href="https://github.com/brindimamush/ai-group-moderator-bot" style="color:var(--primary); font-weight:800; margin-right:20px;" target="_blank">REPO <i class="fab fa-github"></i></a>
-                        
-                    </div>
+                
+                <div class="card bento-item">
+                    <div class="icon-box"><i class="fas fa-coins"></i></div>
+                    <h3>Cost-Effective Excellence</h3>
+                    <p class="text-secondary">Good products shouldn't require massive budgets. AI optimization allows me to deliver high-ROI solutions, minimizing wasted engineering hours.</p>
+                </div>
+
+                <div class="card bento-item">
+                    <div class="icon-box"><i class="fas fa-globe"></i></div>
+                    <h3>100% Remote Ready</h3>
+                    <p class="text-secondary">Seamless asynchronous communication, self-managed workflows, and cloud-native deployment practices make me a plug-and-play addition to any global team.</p>
+                </div>
+
+                <div class="card bento-item">
+                    <div class="icon-box"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Production-Grade Quality</h3>
+                    <p class="text-secondary">AI is the assistant, not the architect. I enforce strict code reviews, CI/CD pipelines, and security best practices to ensure bulletproof deployments.</p>
+                </div>
+
+                <div class="card bento-item large">
+                    <div class="icon-box"><i class="fas fa-microchip"></i></div>
+                    <h3>Modern Tech Stack</h3>
+                    <p style="margin-top: 8px;">
+                        <span class="badge">Python / FastAPI</span>
+                        <span class="badge">Telegram Web Apps (TWA)</span>
+                        <span class="badge">Node.js</span>
+                        <span class="badge">LLM Integration</span>
+                        <span class="badge">Computer Vision</span>
+                        <span class="badge">CI/CD</span>
+                    </p>
                 </div>
             </div>
-
-             <div class="project-card">
-                <div class="project-media">
-                    <iframe width="832" height="451" src="https://www.youtube.com/embed/4ELgMzJBarw" title="ከቴሌብር screenshot የተላከ ደረሰኝ እንዴት ቴሌግራም ላይ ማረጋገጥ እንችላለን | How to check receipt of telebirr on telegram" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
-                <div class="project-info">
-                    <h3>AI_receipt_CHECKER</h3>
-                    <p>Automated verification bot that uses AI to validate Telebirr receipts from screenshots, significantly reducing manual verification time.</p>
-                    <div style="margin-top: 1.5rem;">
-                        <a href="https://github.com/brindimamush/AI_receipt_checker" style="color:var(--primary); font-weight:800; margin-right:20px;" target="_blank">REPO <i class="fab fa-github"></i></a>
-                        
-                    </div>
-                </div>
-            </div>
-
         </div>
     </section>
 
-    <section class="section-padding">
-        <div class="contact-deck">
-            <h2>Let's Connect</h2>
-            <p>Direct reach-out for remote opportunities.</p>
-            
-            <div class="method-list">
-                <a href="mailto:yourname@email.com" class="method-card">
+    <!-- Projects Section -->
+    <section id="projects" class="section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Work <span class="text-accent">Showcase</span></h2>
+                <p class="text-secondary">Real-world applications built with an AI-augmented workflow, focusing on scalability, automation, and business value.</p>
+            </div>
+
+            <div class="bento-grid">
+                
+                <div class="card">
+                    <div class="project-media">
+                        <div class="video-wrapper-9-16">
+                            <iframe src="https://www.youtube.com/embed/IQ1kg7bpUyc" title="singleTenant Ecommerce Telegram webapp" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Single Tenant Ecommerce Telegram Web App</h3>
+                        <p>A robust Single Tenant Ecommerce platform integrated as a Telegram Web App (TWA), providing a native-like, seamless shopping experience directly within Telegram.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/brindimamush/SingleTenantEcommerce" target="_blank" class="link-btn">Repo <i class="fab fa-github"></i></a>
+                            <a href="https://t.me/singleTenantBreBot/LuxeMarket" target="_blank" class="link-btn">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="project-media">
+                        <div class="video-wrapper-16-9">
+                            <iframe src="https://www.youtube.com/embed/sOSsL__4IjE" title="AI Removing toxic content from telegram group" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI_TOXIC_CHECKER</h3>
+                        <p>Real-time AI-powered group moderation bot that automatically detects and removes toxic content using advanced LLM-based semantic analysis, keeping communities safe.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/brindimamush/ai-group-moderator-bot" target="_blank" class="link-btn">Repo <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="project-media">
+                        <div class="video-wrapper-16-9">
+                            <iframe src="https://www.youtube.com/embed/4ELgMzJBarw" title="How to check receipt of telebirr on telegram" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI_receipt_CHECKER</h3>
+                        <p>Automated verification bot that uses AI and computer vision to validate Telebirr receipts from screenshots, significantly reducing manual verification time and fraud.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/brindimamush/AI_receipt_checker" target="_blank" class="link-btn">Repo <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Let's Build Something <span class="text-accent">Great</span></h2>
+                <p class="text-secondary">Have an idea? I'm currently open to remote freelance projects and full-time opportunities. Let's discuss how we can build it efficiently.</p>
+            </div>
+
+            <div class="contact-grid">
+                <a href="mailto:brindimamush@gmail.com" class="contact-item">
                     <i class="fas fa-envelope"></i>
-                    <div>
-                        <div style="font-size: 0.7rem; opacity: 0.6;">EMAIL</div>
-                        <div style="font-weight: 600;">brindimamush@gmail.com</div>
+                    <div class="contact-info">
+                        <h4>Email</h4>
+                        <span>brindimamush@gmail.com</span>
                     </div>
                 </a>
-                <a href="tel:+1234567890" class="method-card">
-                    <i class="fas fa-phone"></i>
-                    <div>
-                        <div style="font-size: 0.7rem; opacity: 0.6;">CALL / WHATSAPP / TELEGRAM</div>
-                        <div style="font-weight: 600;">+251 913-63-73-82</div>
+
+                <a href="https://www.linkedin.com/in/birhanu-mamush-0b7aa52a4/" target="_blank" class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <div class="contact-info">
+                        <h4>LinkedIn</h4>
+                        <span>Birhanu Mamush</span>
                     </div>
+                </a>
+
+                <a href="https://github.com/brindimamush" target="_blank" class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <div class="contact-info">
+                        <h4>GitHub</h4>
+                        <span>@brindimamush</span>
+                    </div>
+                </a>
+
+                <a href="https://t.me/brindimamush" target="_blank" class="contact-item">
+                    <i class="fab fa-telegram"></i>
+                    <div class="contact-info">
+                        <h4>Telegram</h4>
+                        <span>@brindimamush</span>
+                    </div>
+                </a>
+
+                <a href="tel:+251913637382" class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div class="contact-info">
+                        <h4>Phone</h4>
+                        <span>+251 913 637 382</span>
+                    </div>
+                </a>
+            </div>
+            
+            <div style="text-align: center; margin-top: 48px;">
+                <a href="mailto:brindimamush@gmail.com" class="btn" style="padding: 16px 32px; font-size: 1.1rem;">
+                    Start a Conversation <i class="fas fa-paper-plane"></i>
                 </a>
             </div>
         </div>
     </section>
 
-    <footer style="padding: 30px; text-align: center; font-size: 0.7rem; color: var(--text-dim); letter-spacing: 1px;">
-        &copy; <span id="current-year"></span> Birhanu Mamush PYTHON ARCHITECT | REMOTE READY
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="mono">Designed & Built by Birhanu Mamush &copy; <span id="current-year"></span></p>
+            <p style="margin-top: 8px; font-size: 0.75rem;">Leveraging AI for efficient, production-grade software development.</p>
+        </div>
     </footer>
-<script src="script.js"></script>
-    
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        const icon = themeToggle.querySelector('i');
+
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', currentTheme);
+        
+        function updateIcon(theme) {
+            if (theme === 'dark') {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        }
+        updateIcon(currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateIcon(newTheme);
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
